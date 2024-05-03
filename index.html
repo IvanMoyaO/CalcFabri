@@ -1,0 +1,27 @@
+Calculadora Escala Fabricación SJ11 <br>
+   Cota: <input id="num" type="number" step="any" required>
+   Escala: 1:<input id="esc" type="number" step="any" value=1 required>
+   <button type="button" name="calc" onclick="calc(469.4705)">Calcular</button>
+   <br>
+   <p>Directa: <a id="cotai"> </a></p>
+   <p>Inversa: <a id="cotad"> </a></p>
+   
+   Interpretación: 
+<ul>
+  <li> <b> Directa:</b> Si leo (VALOR QUE PONE EN PLANO) en el plano en el informe, realmente mediré: <a id="cotai">(VALOR QUE DEVUELVE)</a> 
+  <li> <b> Inversa:</b> ¿Cuánto es (VALOR MEDIDO) en el plano del informe? Es: <a id="cotad">(VALOR QUE DEVUELVE)</a>
+</ul>
+
+<script>
+function calc(lw){
+  cm = (lw * 1.3333343412075) * 0.0264583333;
+  a4 = 21;
+  escala = a4/cm;
+   
+  escPlano = document.getElementById('esc').value;
+  cota = document.getElementById('num').value;
+  
+  document.getElementById('cotad').innerHTML = cota*escala * escPlano;
+  document.getElementById('cotai').innerHTML = cota*1/escala * escPlano;
+}
+</script>
