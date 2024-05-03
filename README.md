@@ -1,6 +1,7 @@
 # Calculadora Cota Fabricación SJ11
+## https://ivanmoyao.github.io/CalcFabri/
 
-En el Informe (ver repositorio "Fabricación"), los planos se han incluido en formato .pdf para que no pierdan calidad, y se han ajustado para que quepan correctamente en la página (la alternativa era que no se mostrara el encabezado):
+[En el Informe](https://github.com/IvanMoyaO/Fabricacion), los planos se han incluido en formato .pdf para que no pierdan calidad, y se han ajustado para que quepan correctamente en la página (la alternativa era que no se mostrara el encabezado):
 ```latex
 \begin{figure}
     \centering
